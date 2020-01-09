@@ -18,22 +18,29 @@
 # 代码的运行
 
 main.cpp中包含3个函数，分别为preTrainSVM、pipeLineTrain、pipeLineTest
-
+```
 *该函数用于对分类器SVM进行预训练pretrain
 @param config 目标检测方法的配置参数变量，是一个结构体，定义在"config.h"中
 @param istrain 是否对SVM训练的标识符，默认为1* 
+
 void preTrainSVM(Config &config, int istrain=1)
+ ```
  
+ ```
 *该函数用于对分类器SVM进行pipeline训练
 @param config 目标检测方法的配置参数变量，是一个结构体，定义在"config.h"中
 @param istrain 是否对SVM训练的标识符，默认为1* 
+
 void pipeLineTrain(Config &config, int istrain = 1)
-   
+```
+
+```
 *该函数用于对目标检测方法进行整体的测试，计算mAP
 @param config 目标检测方法的配置参数变量，是一个结构体，定义在"config.h"中
-@param istrain 是否对SVM训练的标识符，默认为0,因为这条函数用于pipeLine测试，所以不用训练* 
-void pipeLineTest(Config &config, int istrain = 0)
+@param istrain 是否对SVM训练的标识符，默认为0,因为这条函数用于pipeLine测试，所以不用训练*  
 
+void pipeLineTest(Config &config, int istrain = 0)
+```
 编译成功之后，直接运行就可以了！
 enjoy it！
 
