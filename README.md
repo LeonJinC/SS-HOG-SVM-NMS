@@ -1,4 +1,4 @@
-##在VS中的设置
+#在VS中的设置
 1. 添加源代码路径
    项目 -> 属性 -> C/C++ -> 常规 -> 附加包含目录 ：添加 ./src
 2. 配置好OpenCV的环境
@@ -6,7 +6,7 @@
    这个属性表是笔者自己在用，需要相对应的修改里面opencv的路径（比如，AdditionalIncludeDirectories、AdditionalLibraryDirectories、AdditionalDependencies）
    
    
-##代码中的修改
+#代码中的修改
 1. config.h文件中修改RootPath="./path_to_dataset/"
    修改这个路径到数据集的根目录，数据集文件夹包含两个子文件（Detection、Classification）
    
@@ -15,7 +15,7 @@
    数据集来源：http://portal.uc3m.es/portal/page/portal/dpto_ing_sistemas_automatica/investigacion/IntelligentSystemsLab/research/InfraredDataset
 
 
-##代码的运行
+#代码的运行
 
 main.cpp中包含3个函数，分别为
 /*
@@ -38,4 +38,14 @@ void pipeLineTest(Config &config, int istrain = 0)
 
 编译成功之后，直接运行就可以了！
 enjoy it！
+训练结果的mAP如下所示，71.4%
 ![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/traindataset_mAP.jpg)
+
+训练数据集的检测结果，如下
+![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/train_detection.jpg)
+
+测试结果的mAP如下所示，61.8%
+![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/testdataset_mAP.jpg)
+
+测试数据集的检测结果，如下
+![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/test_detection.jpg)
