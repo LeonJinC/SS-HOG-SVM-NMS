@@ -1,0 +1,36 @@
+﻿  main.cpp
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(687): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(775): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(776): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(781): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(789): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(815): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(816): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(821): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\ss.h(829): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+f:\leon\code\vs_projects\算法研究\目标检测\ss+hog+svm+nms\src\config.h(43): warning C4305: “初始化”: 从“double”到“float”截断
+f:\leon\code\vs_projects\算法研究\目标检测\ss+hog+svm+nms\src\config.h(67): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\hog.h(16): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\nms.h(17): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\nms.h(19): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\nms.h(36): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\nms.h(46): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\map.h(12): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\map.h(14): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\map.h(56): warning C4305: “参数”: 从“double”到“float”截断
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\map.h(88): warning C4305: “参数”: 从“double”到“float”截断
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\map.h(100): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\utils.h(48): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\utils.h(50): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\utils.h(63): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\utils.h(91): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\utils.h(99): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\utils.h(150): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\src\utils.h(151): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(143): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(144): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  All 1325 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  SS+HOG+SVM+NMS.vcxproj -> F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\x64\Release\SS+HOG+SVM+NMS.exe
+  SS+HOG+SVM+NMS.vcxproj -> F:\Leon\CODE\VS_projects\算法研究\目标检测\SS+HOG+SVM+NMS\x64\Release\SS+HOG+SVM+NMS.pdb (Full PDB)
