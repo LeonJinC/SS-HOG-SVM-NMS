@@ -10,9 +10,9 @@
 1. config.h文件中修改RootPath="./path_to_dataset/"
    修改这个路径到数据集的根目录，数据集文件夹包含两个子文件（Detection、Classification）
    
-   数据集文件可以在下面的链接处下载：
-   https://pan.baidu.com/s/1a81Mx-JWAu0ALcP963kCXA
-   数据集来源：http://portal.uc3m.es/portal/page/portal/dpto_ing_sistemas_automatica/investigacion/IntelligentSystemsLab/research/InfraredDataset
+数据集文件可以在下面的链接处下载：https://pan.baidu.com/s/1a81Mx-JWAu0ALcP963kCXA
+
+数据集来源：http://portal.uc3m.es/portal/page/portal/dpto_ing_sistemas_automatica/investigacion/IntelligentSystemsLab/research/InfraredDataset
 
 
 #代码的运行
