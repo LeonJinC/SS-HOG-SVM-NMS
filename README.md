@@ -38,3 +38,4 @@ void pipeLineTest(Config &config, int istrain = 0)
 
 编译成功之后，直接运行就可以了！
 enjoy it！
+![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/traindataset_mAP.jpg)
