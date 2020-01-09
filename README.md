@@ -53,6 +53,7 @@ enjoy it！
 蓝色框为Ground Truth，红色框为检测框，红色数字为置信度
 
 训练结果的mAP如下所示，71.4%
+
 ![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/traindataset_mAP.jpg)
 
 训练数据集的检测结果，如下
