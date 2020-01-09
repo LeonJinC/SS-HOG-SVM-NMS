@@ -11,12 +11,13 @@
 # 代码中的修改
 ## 1. config.h文件中修改RootPath="./path_to_dataset/"
    修改这个路径到数据集的根目录，数据集文件夹包含两个子文件（Detection、Classification）
-   
+```
 数据集文件可以在下面的链接处下载：
 https://pan.baidu.com/s/1a81Mx-JWAu0ALcP963kCXA
-
+```
+```
 数据集来源：http://portal.uc3m.es/portal/page/portal/dpto_ing_sistemas_automatica/investigacion/IntelligentSystemsLab/research/InfraredDataset
-
+```
 
 # 代码的运行
 
@@ -60,3 +61,10 @@ enjoy it！
 
 测试数据集的检测结果，如下
 ![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/test_detection.jpg)
+
+# 实现细节
+## 训练阶段的SVM训练
+所有的预选边框与对应的GroundTruth计算iou值，iou≥0.7为正样本，iou<0.1为负样本，从而构建正负样本数据集用于训练SVM分类器。
+
+## 测试阶段mAP计算
+iou阈值≥0.5为tp，iou<0.5为fp
