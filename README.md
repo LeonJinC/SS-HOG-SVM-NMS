@@ -54,7 +54,7 @@ enjoy it！
 
 训练结果的mAP如下所示，71.4%
 
-![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS//master/results/traindataset_mAP.jpg)
+![jpg](results/test_detection.jpg)
 
 训练数据集的检测结果，如下
 ![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS/master/results/train_detection.jpg)
