@@ -9,9 +9,9 @@
 #include"utils.h"
 
 
-/*
-¸Ãº¯ÊıÓÃÓÚ¶Ô·ÖÀàÆ÷SVM½øĞĞÔ¤ÑµÁ·pretrain
-@param config Ä¿±ê¼ì²â·½·¨µÄÅäÖÃ²ÎÊı±äÁ¿£¬ÊÇÒ»¸ö½á¹¹Ìå£¬¶¨ÒåÔÚ"config.h"ÖĞ
+/*brief è¯¥å‡½æ•°ç”¨äºå¯¹åˆ†ç±»å™¨SVMè¿›è¡Œé¢„è®­ç»ƒpretrain
+@param config ç›®æ ‡æ£€æµ‹æ–¹æ³•çš„é…ç½®å‚æ•°å˜é‡ï¼Œæ˜¯ä¸€ä¸ªç»“æ„ä½“ï¼Œå®šä¹‰åœ¨"config.h"ä¸­
+@param istrain æ˜¯å¦å¯¹SVMè®­ç»ƒçš„æ ‡è¯†ç¬¦ï¼Œé»˜è®¤ä¸º1
 */
 void preTrainSVM(Config &config, int istrain=1) {
 	cv::Mat trainX, trainY, testX, testY;
@@ -20,33 +20,33 @@ void preTrainSVM(Config &config, int istrain=1) {
 	_file.open(config.preTrainData, std::ios::in);
 	if (!_file)
 	{
-		std::cout << config.preTrainData << " Ã»ÓĞ±»´´½¨" << std::endl;
+		std::cout << config.preTrainData << " æ²¡æœ‰è¢«åˆ›å»º" << std::endl;
 
 		utils::loadData(config, config.TrainPath, config.preTrainData, trainX, trainY);
 	}
 	else {
-		std::cout << config.preTrainData << " ÒÑ¾­´æÔÚ" << std::endl;
+		std::cout << config.preTrainData << " å·²ç»å­˜åœ¨" << std::endl;
 		utils::readData(config.preTrainData, trainX, trainY);
 	}
 	_file.close();
-	std::cout << "trainX³ß´ç --> " << trainX.rows << " x " << trainX.cols << std::endl;
-	std::cout << "trainY³ß´ç --> " << trainY.rows << " x " << trainY.cols << std::endl;
+	std::cout << "trainXå°ºå¯¸ --> " << trainX.rows << " x " << trainX.cols << std::endl;
+	std::cout << "trainYå°ºå¯¸ --> " << trainY.rows << " x " << trainY.cols << std::endl;
 
 	_file.open(config.preTestData, std::ios::in);
 	if (!_file)
 	{
-		std::cout << config.preTestData << " Ã»ÓĞ±»´´½¨" << std::endl;
+		std::cout << config.preTestData << " æ²¡æœ‰è¢«åˆ›å»º" << std::endl;
 
 		utils::loadData(config, config.TestPath, config.preTestData, testX, testY);
 	}
 	else {
-		std::cout << config.preTestData << " ÒÑ¾­´æÔÚ" << std::endl;
+		std::cout << config.preTestData << " å·²ç»å­˜åœ¨" << std::endl;
 		utils::readData(config.preTestData, testX, testY);
 
 	}
 	_file.close();
-	std::cout << "testX³ß´ç --> " << testX.rows << " x " << testX.cols << std::endl;
-	std::cout << "testY³ß´ç --> " << testY.rows << " x " << testY.cols << std::endl;
+	std::cout << "testXå°ºå¯¸ --> " << testX.rows << " x " << testX.cols << std::endl;
+	std::cout << "testYå°ºå¯¸ --> " << testY.rows << " x " << testY.cols << std::endl;
 
 
 	MYSVM svm(config, config.preTrainModel, istrain);
@@ -56,15 +56,15 @@ void preTrainSVM(Config &config, int istrain=1) {
 	svm.test(testX,testY);
 
 }
-/*
-¸Ãº¯ÊıÓÃÓÚ¶Ô·ÖÀàÆ÷SVM½øĞĞpipelineÑµÁ·
-@param config Ä¿±ê¼ì²â·½·¨µÄÅäÖÃ²ÎÊı±äÁ¿£¬ÊÇÒ»¸ö½á¹¹Ìå£¬¶¨ÒåÔÚ"config.h"ÖĞ
+/*brief è¯¥å‡½æ•°ç”¨äºå¯¹åˆ†ç±»å™¨SVMè¿›è¡Œé¢„è®­ç»ƒpretrain
+@param config ç›®æ ‡æ£€æµ‹æ–¹æ³•çš„é…ç½®å‚æ•°å˜é‡ï¼Œæ˜¯ä¸€ä¸ªç»“æ„ä½“ï¼Œå®šä¹‰åœ¨"config.h"ä¸­
+@param istrain æ˜¯å¦å¯¹SVMè®­ç»ƒçš„æ ‡è¯†ç¬¦ï¼Œé»˜è®¤ä¸º1
 */
 void pipeLineTrain(Config &config, int istrain = 1)
 {
-	std::ifstream f;// »ñÈ¡²âÊÔÍ¼Æ¬ÎÄ¼şÂ·¾¶
+	std::ifstream f;// è·å–æµ‹è¯•å›¾ç‰‡æ–‡ä»¶è·¯å¾„
 
-	f.open(config.DetectionPath + config.pipetrainDetectionTXT, std::ios::in);//¶ÁÈëÍ¼Ïñ
+	f.open(config.DetectionPath + config.pipetrainDetectionTXT, std::ios::in);//è¯»å…¥å›¾åƒ
 
 	if (f.fail())
 	{
@@ -157,10 +157,10 @@ void pipeLineTrain(Config &config, int istrain = 1)
 		utils::downloadData(config.pipeTrainData, X, Y);
 	}
 
-	//ÕâÀï¿ÉÒÔ½«preTrainModel¸Ä³ÉpipeTrainModel£¬²¢ÔÚmodelÎÄ¼ş¼ĞÖĞÉ¾È¥pipeTrainModel.xml
-	//ÕâÑù¾Í²»ÊÇloadÔ¤ÑµÁ·µÄSVMÄ£ĞÍ£¬¶øÊÇ´ÓĞÂ¿ªÊ¼ÑµÁ·£¬
-	//²»¹ı£¬²»¹ÜÊÇloadÔ¤ÑµÁ·µÄSVMÄ£ĞÍpreTrainModel£¬»¹ÊÇÖØĞÂ¿ªÊ¼ÑµÁ·pipeTrainModel
-	//¶Ô½á¹ûmAP»òÕßÈÎºÎÊµÑéÖ¸±ê¶¼Ã»ÓĞÈÎºÎÓ°Ïì
+	//è¿™é‡Œå¯ä»¥å°†preTrainModelæ”¹æˆpipeTrainModelï¼Œå¹¶åœ¨modelæ–‡ä»¶å¤¹ä¸­åˆ å»pipeTrainModel.xml
+	//è¿™æ ·å°±ä¸æ˜¯loadé¢„è®­ç»ƒçš„SVMæ¨¡å‹ï¼Œè€Œæ˜¯ä»æ–°å¼€å§‹è®­ç»ƒï¼Œ
+	//ä¸è¿‡ï¼Œä¸ç®¡æ˜¯loadé¢„è®­ç»ƒçš„SVMæ¨¡å‹preTrainModelï¼Œè¿˜æ˜¯é‡æ–°å¼€å§‹è®­ç»ƒpipeTrainModel
+	//å¯¹ç»“æœmAPæˆ–è€…ä»»ä½•å®éªŒæŒ‡æ ‡éƒ½æ²¡æœ‰ä»»ä½•å½±å“
 	MYSVM svm(config,config.preTrainModel, istrain);
 	
 	if(istrain==1)svm.train(X, Y,config.pipeTrainModel);
@@ -168,14 +168,14 @@ void pipeLineTrain(Config &config, int istrain = 1)
 
 }
 
-/*
-¸Ãº¯ÊıÓÃÓÚ¶ÔÄ¿±ê¼ì²â·½·¨½øĞĞÕûÌåµÄ²âÊÔ£¬¼ÆËãmAP
-@param config Ä¿±ê¼ì²â·½·¨µÄÅäÖÃ²ÎÊı±äÁ¿£¬ÊÇÒ»¸ö½á¹¹Ìå£¬¶¨ÒåÔÚ"config.h"ÖĞ
+/*brief è¯¥å‡½æ•°ç”¨äºå¯¹ç›®æ ‡æ£€æµ‹æ–¹æ³•è¿›è¡Œæ•´ä½“çš„æµ‹è¯•ï¼Œè®¡ç®—mAP
+@param config ç›®æ ‡æ£€æµ‹æ–¹æ³•çš„é…ç½®å‚æ•°å˜é‡ï¼Œæ˜¯ä¸€ä¸ªç»“æ„ä½“ï¼Œå®šä¹‰åœ¨"config.h"ä¸­
+@param istrain æ˜¯å¦å¯¹SVMè®­ç»ƒçš„æ ‡è¯†ç¬¦ï¼Œé»˜è®¤ä¸º0,å› ä¸ºè¿™æ¡å‡½æ•°ç”¨äºpipeLineæµ‹è¯•ï¼Œæ‰€ä»¥ä¸ç”¨è®­ç»ƒ
 */
 void pipeLineTest(Config &config, int istrain = 0) {
-	std::ifstream f;// »ñÈ¡²âÊÔÍ¼Æ¬ÎÄ¼şÂ·¾¶
+	std::ifstream f;// è·å–æµ‹è¯•å›¾ç‰‡æ–‡ä»¶è·¯å¾„
 
-	f.open(config.DetectionPath + config.testDetectionTXT, std::ios::in);//¶ÁÈëÍ¼Ïñ
+	f.open(config.DetectionPath + config.testDetectionTXT, std::ios::in);//è¯»å…¥å›¾åƒ
 
 	if (f.fail())
 	{
@@ -248,11 +248,11 @@ void pipeLineTest(Config &config, int istrain = 0) {
 int main()
 {
 
-	Config config;
+    Config config;
 	
-	preTrainSVM(config);
+    preTrainSVM(config);
 
-	pipeLineTrain(config);
+    pipeLineTrain(config);
 
     pipeLineTest(config);
 
