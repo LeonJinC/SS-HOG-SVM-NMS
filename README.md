@@ -1,4 +1,5 @@
 笔者在研究过程中，尝试结合特征提取器HOG、分类器SVM、区域边框提取方法SelectiveSearch和非极大值抑制方法NMS，用于解决红外行人检测问题
+![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test1_gif.gif)
 
 # 在VS中的设置
 ## 1. 添加源代码路径
@@ -63,8 +64,6 @@ enjoy it！
 
 测试数据集的检测结果，如下
 ![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test_detection.jpg)
-
-![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test1_gif.gif)
 
 # 实现细节
 ## 训练阶段的SVM训练
