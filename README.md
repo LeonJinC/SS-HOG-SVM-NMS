@@ -54,18 +54,18 @@ enjoy it！
 
 训练结果的mAP如下所示，71.4%
 
-![jpg](results/test_detection.jpg)
+![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test_detection.jpg)
 
 训练数据集的检测结果，如下
-![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS/master/results/train_detection.jpg)
+![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/train_detection.jpg)
 
 测试结果的mAP如下所示，61.8%
-![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS/master/results/testdataset_mAP.jpg)
+![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/testdataset_mAP.jpg)
 
 测试数据集的检测结果，如下
-![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS/master/results/test_detection.jpg)
+![jpg](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test_detection.jpg)
 
-![gif](https://github.com/LeonJinC/SS-HOG-SVM-NMS/master/results/test1_gif.gif)
+![gif](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test1_gif.gif)
 
 # 实现细节
 ## 训练阶段的SVM训练
