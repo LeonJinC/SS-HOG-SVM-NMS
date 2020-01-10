@@ -63,7 +63,7 @@ enjoy it！
 ![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/testdataset_mAP.jpg)
 
 测试数据集的检测结果，如下
-![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test_detection.jpg)
+
 
 
 
