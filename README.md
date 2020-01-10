@@ -65,6 +65,8 @@ enjoy it！
 测试数据集的检测结果，如下
 ![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test_detection.jpg)
 
+![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test1.avi)
+
 # 实现细节
 ## 训练阶段的SVM训练
 所有的预选边框与对应的GroundTruth计算iou值，iou≥0.7为正样本，iou<0.1为负样本，从而构建正负样本数据集用于训练SVM分类器。
