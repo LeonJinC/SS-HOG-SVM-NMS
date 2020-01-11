@@ -1,6 +1,7 @@
 笔者在研究过程中，尝试结合特征提取器HOG、分类器SVM、区域边框提取方法SelectiveSearch和非极大值抑制方法NMS，用于解决红外行人检测问题
 
 *蓝色框为Ground Truth，红色框为检测框，红色数值为置信度*
+
 ![gif图片未加载](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test1_gif.gif)
 
 # 在VS中的设置
