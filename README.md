@@ -1,7 +1,7 @@
 笔者在研究过程中，尝试结合特征提取器HOG、分类器SVM、区域边框提取方法SelectiveSearch和非极大值抑制方法NMS，用于解决红外行人检测问题
 
 *蓝色框为Ground Truth，红色框为检测框，红色数值为置信度*
-![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test1_gif.gif)
+![gif图片未加载](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test1_gif.gif)
 
 # 在VS中的设置
 ## 1. 添加源代码路径
@@ -57,16 +57,16 @@ enjoy it！
 
 训练结果的mAP如下所示，71.4%
 
-![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/traindataset_mAP.jpg)
+![jpg图片未加载](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/traindataset_mAP.jpg)
 
 训练数据集的检测结果，如下
-![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/train_detection.jpg)
+![jpg图片未加载](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/train_detection.jpg)
 
 测试结果的mAP如下所示，61.8%
-![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/testdataset_mAP.jpg)
+![jpg图片未加载](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/testdataset_mAP.jpg)
 
 测试数据集的检测结果，如下
-![](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test_detection.jpg)
+![jpg图片未加载](https://github.com/LeonJinC/SS-HOG-SVM-NMS/blob/master/results/test_detection.jpg)
 
 # 实现细节
 ## 训练阶段的SVM训练
